@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="altj.master.cs" Inherits="project.net.altj" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Alt-J | Music Store</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+     <header>
+        <h2 class="logo">Alt-J</h2>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navigation">
+           <a href="#home" class="active">Home</a>
+          <a href="#products">Products</a>
+            <a href="#events">Events</a>
+            <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+            
+        </nav>
+        <br />
+         
+    </header>
+    
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <!--footer-->
+    <br />
+    <br />
+    <br />
+    <Br />
+    <br />
+    <Br />
+    <br />
+    <Br />
+    <div class="foot">
+         <div class="col-1">
+             <h3>USEFUL LINKS</h3>
+             <a href="home.aspx">Home</a>
+             <a href="#about">About</a>
+             <a href="#products">Products</a>
+             <a href="#events">Events</a>
+             <a href="#contact">Contact Us</a>
+         </div>
+          <div class="col-2">
+              <h3>NEWSLETTER</h3>
+             <div class="input-box">
+                  <input type="email" placeholder="Your Email Address" />
+                  <br /><br />
+                 <button type="submit">SUBSCRIBE NOW</button>
+
+             </div>
+               
+            
+         </div>
+          <div class="col-3">
+              <h3>CONTACT</h3>
+              <p>altj@gmail.com<br />0114158416<Br />P.O Box 244-30700</p>
+              <div class="social-icons">
+            <ion-icon name="logo-facebook"></ion-icon>
+                  <ion-icon name="logo-twitter"></ion-icon>
+                  <ion-icon name="logo-instagram"></ion-icon>
+                  <ion-icon name="logo-tiktok"></ion-icon>
+              </div>
+             
+         </div>
+     </div>
+<footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2023 | Dorelies Siloma</p>
+    </div>
+
+    <div class="footer-iconTop">
+        <a href="#home"><i class='bx bxs-up-arrow'></i></a>
+    </div>
+</footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
